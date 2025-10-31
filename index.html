@@ -96,26 +96,35 @@
     }
 
     /* ========= Hero 区 ========= */
-    .hero {
-      height: 85vh; 
-      min-height:520px; 
-      display:flex; 
-      align-items:center; 
-      padding-top:72px;
-      position:relative; 
-      overflow:hidden;
-      background: 
-        radial-gradient(circle at 20% 30%, rgba(10,132,255,0.08), transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(90,200,250,0.05), transparent 30%),
-        url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
-    }
-    .hero::before {
-      content:""; 
-      position:absolute; 
-      inset:0; 
-      background: linear-gradient(90deg, rgba(2,6,26,0.82) 0%, rgba(2,6,26,0.45) 50%, rgba(2,6,26,0.88) 100%); 
-      z-index:0;
-    }
+.hero {
+  height: 85vh; 
+  min-height:520px; 
+  display:flex; 
+  align-items:center; 
+  padding-top:72px;
+  position:relative; 
+  overflow:hidden;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(10,132,255,0.08), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(90,200,250,0.05), transparent 30%),
+    url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+}
+
+/* ========= 算力中心页面特殊背景 ========= */
+#compute-page .hero {
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(10,132,255,0.08), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(90,200,250,0.05), transparent 30%),
+    url('https://bpic.588ku.com/back_pic/06/36/34/336397446875213.jpg') center/cover no-repeat;
+}
+
+.hero::before {
+  content:""; 
+  position:absolute; 
+  inset:0; 
+  background: linear-gradient(90deg, rgba(2,6,26,0.82) 0%, rgba(2,6,26,0.45) 50%, rgba(2,6,26,0.88) 100%); 
+  z-index:0;
+}
     .hero-inner { 
       z-index:2; 
       max-width:1280px; 
@@ -351,6 +360,7 @@
     .feature h4 {
       color: var(--primary);
       margin-bottom: 12px;
+      font-size: 1.3rem;
     }
     .feature p {
       color: var(--muted);
@@ -549,7 +559,7 @@
         <div class="hero-left">
           <div class="hero-title" data-lang-zh="空天地一体化实验室" data-lang-en="Integrated Laboratory for Space, Air, and Ground Systems">空天地一体化实验室</div>
 
-          <div class="hero-sub" data-lang-zh="构建'空中—天基—地面'一体化信息协同体系，以算力赋能中亚数字化新格局" data-lang-en="Building an integrated Space–Air–Ground information system empowered by green computing to drive Central Asia's digital future.">构建"空中—天基—地面"一体化信息协同体系，以算力赋能中亚数字化新格局</div>
+          <div class="hero-sub" data-lang-zh="构建“卫星数据采集—智能分析—场景适配”的全链条技术能力体系，共筑“数字丝绸之路”夯实底座。" data-lang-en="A comprehensive technical capability system for 'satellite data collection - intelligent analysis - scenario adaptation,' jointly strengthening the foundation of the Digital Silk Road.">构建“卫星数据采集—智能分析—场景适配”的全链条技术能力体系，共筑“数字丝绸之路”夯实底座。</div>
 
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projects" data-lang-zh="查看关联项目" data-lang-en="View Associated Projects">查看关联项目</a>
@@ -560,7 +570,7 @@
         <div class="hero-right">
           <div class="card">
             <h4 data-lang-zh="联合建设" data-lang-en="Jointly Founded">联合建设</h4>
-            <p data-lang-zh="由中科院、新疆大学、清华大学、北京大学、浙江大学等单位共建，聚焦空—天—地一体化技术与应用。" data-lang-en="Co-founded by CAS, Xinjiang University, Tsinghua University, Peking University, and Zhejiang University, focusing on integrated space–air–ground technologies and applications.">由中科院、新疆大学、清华大学、北京大学、浙江大学等单位共建，聚焦空—天—地一体化技术与应用。</p>
+            <p data-lang-zh="由中科院、清华大学、北京大学、浙江大学、新疆大学等科研院所及高校共建，聚焦空—天—地一体化技术与应用。" data-lang-en="Co-established by research institutions and universities such as the Chinese Academy of Sciences, Tsinghua University, Peking University, Zhejiang University, and Xinjiang University, focusing on integrated space-ground technology and applications.">由中科院、清华大学、北京大学、浙江大学、新疆大学等科研院所及高校共建，聚焦空—天—地一体化技术与应用。</p>
           </div>
         </div>
       </div>
@@ -571,7 +581,7 @@
       <!-- 实验室简介 -->
       <section id="intro" class="section">
         <h3 data-lang-zh="实验室简介" data-lang-en="Laboratory Overview">实验室简介</h3>
-        <p data-lang-zh="空天地一体化实验室由中国科学院、新疆大学、清华大学、北京大学、浙江大学等高校与研究机构共建，拥有60余名专业技术人员（研发人员占比高），由院士顾问组提供技术指导。实验室旨在通过空天遥感、低空感知与地面智能监测的协同，构建面向中亚及中国西部的时空智能数据平台，推动农业、能源、生态与应急管理的数字化升级。" data-lang-en="The Integrated Laboratory for Space, Air, and Ground Systems is jointly established by the Chinese Academy of Sciences, Xinjiang University, Tsinghua University, Peking University, Zhejiang University, and other research institutions. With over 60 professional technical staff (high proportion of R&D personnel) and guided by an academician advisory group, the laboratory aims to build a spatiotemporal intelligent data platform for Central Asia and Western China through the integration of space remote sensing, low-altitude sensing, and ground intelligent monitoring, promoting digital transformation in agriculture, energy, ecology, and emergency management.">空天地一体化实验室由中国科学院、新疆大学、清华大学、北京大学、浙江大学等高校与研究机构共建，拥有60余名专业技术人员（研发人员占比高），由院士顾问组提供技术指导。实验室旨在通过空天遥感、低空感知与地面智能监测的协同，构建面向中亚及中国西部的时空智能数据平台，推动农业、能源、生态与应急管理的数字化升级。</p>
+        <p data-lang-zh="空天地一体化实验室由中科院、清华大学、北京大学、浙江大学、新疆大学等科研院所及高校共建，拥有60余名专业技术人员，由六位中科院工程院院士提供技术指导。实验室旨在通过空天遥感、低空通讯与地面智能监测三方协同，构建面向中亚及中国西部的时空智能平台，推动中亚与新疆地区农业、能源、生态与应急管理的数字化升级。" data-lang-en="The Integrated Space and Ground Laboratory is jointly established by research institutions and universities such as the Chinese Academy of Sciences, Tsinghua University, Peking University, Zhejiang University, and Xinjiang University. It has more than 60 professional technical personnel and is guided by six academicians from the Chinese Academy of Engineering. The laboratory aims to build a spatiotemporal intelligent platform for Central Asia and western China through the collaboration of aerospace remote sensing, low-altitude communication, and ground intelligent monitoring, promoting the digital upgrade of agriculture, energy, ecology, and emergency management in Central Asia and the Xinjiang region.">空天地一体化实验室由中科院、清华大学、北京大学、浙江大学、新疆大学等科研院所及高校共建，拥有60余名专业技术人员，由六位中科院工程院院士提供技术指导。实验室旨在通过空天遥感、低空通讯与地面智能监测三方协同，构建面向中亚及中国西部的时空智能平台，推动中亚与新疆地区农业、能源、生态与应急管理的数字化升级。</p>
       </section>
 
       <!-- 特色亮点 -->
@@ -579,17 +589,17 @@
         <h3 data-lang-zh="特色亮点" data-lang-en="Key Features">特色亮点</h3>
         <div class="features">
           <div class="feature">
-            <div class="feature-icon">🛰🛰🛰</div>
+           
             <h4 data-lang-zh="空天遥感" data-lang-en="Space Remote Sensing">空天遥感</h4>
             <p data-lang-zh="高分辨率卫星遥感与北斗高精度定位技术" data-lang-en="High-resolution satellite remote sensing and Beidou positioning">高分辨率卫星遥感与北斗高精度定位技术</p>
           </div>
           <div class="feature">
-            <div class="feature-icon">🚁🚁🚁</div>
-            <h4 data-lang-zh="低空感知" data-lang-en="Low-altitude Sensing">低空感知</h4>
+            
+            <h4 data-lang-zh="低空通讯" data-lang-en="Low-altitude communication">低空通讯</h4>
             <p data-lang-zh="无人机智能调度与低空安全预警平台" data-lang-en="Intelligent UAV dispatch and low-altitude safety warning">无人机智能调度与低空安全预警平台</p>
           </div>
           <div class="feature">
-            <div class="feature-icon">🌐🌐🌐</div>
+            
             <h4 data-lang-zh="国际协作" data-lang-en="International Collaboration">国际协作</h4>
             <p data-lang-zh="与中亚国家共建联合实验室，推动区域合作" data-lang-en="Joint labs with Central Asian countries for regional cooperation">与中亚国家共建联合实验室，推动区域合作</p>
           </div>
@@ -635,7 +645,7 @@
         <div class="proj-list">
           <div class="proj-item">
             <h4 data-lang-zh="新疆国际融合算力中心（算力支撑）" data-lang-en="Xinjiang International Integrated Computing Power Center (Computing Backbone)">新疆国际融合算力中心（算力支撑）</h4>
-            <p data-lang-zh="新疆国际融合算力中心位于昌吉市，是实验室的重要算力与数据支撑平台。项目一期已投运峰值算力2000P，二期规划新增8000P，建成后总算力规模为10000P。中心采用先进液冷与智能调度系统，一期数据中心PUE值低于2，为卫星遥感影像解译、多模态AI训练与跨境数据服务提供稳定、高效、低碳的计算基础。" data-lang-en="Located in Changji City, the Xinjiang International Integrated Computing Power Center serves as a crucial computing and data support platform for the laboratory. Phase I has deployed 2,000P peak computing power, with Phase II planning an additional 8,000P, totaling 10,000P upon completion. Utilizing advanced liquid cooling and intelligent scheduling systems, the Phase I data center achieves a PUE as low as 1.15, providing stable, efficient, and low-carbon computing infrastructure for satellite imagery interpretation, multimodal AI training, and cross-border data services.">新疆国际融合算力中心位于昌吉市，是实验室的重要算力与数据支撑平台。项目一期已投运峰值算力2000P，二期规划新增8000P，建成后总算力规模为10000P。中心采用先进液冷与智能调度系统，一期数据中心PUE值低于2，为卫星遥感影像解译、多模态AI训练与跨境数据服务提供稳定、高效、低碳的计算基础。</p>
+            <p data-lang-zh="新疆国际融合算力中心位于昌吉市，是实验室的重要算力与数据支撑平台。项目一期已投运峰值算力2000P，二期规划新增8000P，建成后总算力规模为10000P。中心采用先进液冷与智能调度系统，一期数据中心PUE值低于1.2，为卫星遥感影像解译、多模态AI训练与跨境数据服务提供稳定、高效、低碳的计算基础。" data-lang-en="Located in Changji City, the Xinjiang International Integrated Computing Power Center serves as a crucial computing and data support platform for the laboratory. Phase I has deployed 2,000P peak computing power, with Phase II planning an additional 8,000P, totaling 10,000P upon completion. Utilizing advanced liquid cooling and intelligent scheduling systems, the Phase I data center achieves a PUE as low as 1.2, providing stable, efficient, and low-carbon computing infrastructure for satellite imagery interpretation, multimodal AI training, and cross-border data services.">新疆国际融合算力中心位于昌吉市，是实验室的重要算力与数据支撑平台。项目一期已投运峰值算力2000P，二期规划新增8000P，建成后总算力规模为10000P。中心采用先进液冷与智能调度系统，一期数据中心PUE值低于1.2，为卫星遥感影像解译、多模态AI训练与跨境数据服务提供稳定、高效、低碳的计算基础。</p>
 
             <p style="margin-top:12px;">
               <a href="#" class="btn btn-ghost" onclick="switchPage('compute-page')" data-lang-zh="查看算力中心详情 →" data-lang-en="View Computing Center Details →">查看算力中心详情 →</a>
@@ -708,10 +718,228 @@
             </p>
           </div>
         </div>
+      <!-- ========== 技术与产品服务 ========== -->
+      <section id="services" class="section">
+        <h3 data-lang-zh="服务模式" data-lang-en="Service Model">服务模式</h3>
         
+        <!-- 服务模式介绍 -->
+        <div class="service-model">
+          <h4 data-lang-zh="一体化服务模式" data-lang-en="Integrated Service Model">一体化服务模式</h4>
+          <p data-lang-zh="我们构建了'算力支撑—模型开发—技术培训'一体化服务模式。对于具备项目需求的合作伙伴，可按需提供高性能算力资源；对缺乏算力应用经验的机构，提供定制化大模型开发与算法训练服务；对新进入人工智能领域的团队，我们派出专业技术团队开展现场培训与系统化指导，帮助合作方快速掌握模型使用与二次开发能力，真正实现从'可用算力'到'会用算力'的跃升。" 
+             data-lang-en="We have established an integrated service model of 'Computing Power Support – Model Development – Technical Training.' For partners with specific project requirements, we provide on-demand access to high-performance computing resources. For institutions without experience in computing power utilization, we offer customized AI model development and algorithm training services. For teams newly entering the AI field, our professional technical experts deliver on-site training and systematic guidance, enabling partners to quickly master model deployment and secondary development — achieving a true transition from having computing power to knowing how to use it.">
+          </p>
+        </div>
+        
+        <div class="services-intro">
+          <p data-lang-zh="空天地一体化实验室及新疆国际融合算力中心面向科研、企事业单位及合作伙伴，开放核心资源与设备服务，提供以下技术咨询与采购支持：" 
+             data-lang-en="The Space–Air–Ground Integrated Laboratory and the Xinjiang International Integrated Computing Power Center provide open access to key resources and equipment for research institutions, enterprises, and international partners, offering the following consultation and procurement services:">
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- 算力支撑 -->
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h4 data-lang-zh="算力支撑" data-lang-en="Computing Power Support">算力支撑</h4>
+            <p data-lang-zh="对于具备项目需求的合作伙伴，可按需提供高性能算力资源" 
+               data-lang-en="For partners with specific project requirements, we provide on-demand access to high-performance computing resources.">
+            </p>
+            <div class="service-details">
+              <ul>
+                <li data-lang-zh="按需提供GPU集群资源" data-lang-en="On-demand GPU cluster resources">按需提供GPU集群资源</li>
+                <li data-lang-zh="分布式计算环境部署" data-lang-en="Distributed computing environment deployment">分布式计算环境部署</li>
+                <li data-lang-zh="大规模数据处理支持" data-lang-en="Large-scale data processing support">大规模数据处理支持</li>
+                <li data-lang-zh="高性能存储解决方案" data-lang-en="High-performance storage solutions">高性能存储解决方案</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- 模型开发 -->
+          <div class="service-card">
+            <div class="service-icon">🤖</div>
+            <h4 data-lang-zh="模型开发" data-lang-en="Model Development">模型开发</h4>
+            <p data-lang-zh="对缺乏算力应用经验的机构，提供定制化大模型开发与算法训练服务" 
+               data-lang-en="For institutions without experience in computing power utilization, we offer customized AI model development and algorithm training services.">
+            </p>
+            <div class="service-details">
+              <ul>
+                <li data-lang-zh="行业定制大模型开发" data-lang-en="Industry-specific large model development">行业定制大模型开发</li>
+                <li data-lang-zh="端到端算法训练服务" data-lang-en="End-to-end algorithm training services">端到端算法训练服务</li>
+                <li data-lang-zh="模型优化与部署支持" data-lang-en="Model optimization and deployment support">模型优化与部署支持</li>
+                <li data-lang-zh="迁移学习与微调服务" data-lang-en="Transfer learning and fine-tuning services">迁移学习与微调服务</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- 技术培训 -->
+          <div class="service-card">
+            <div class="service-icon">👨‍🏫</div>
+            <h4 data-lang-zh="技术培训" data-lang-en="Technical Training">技术培训</h4>
+            <p data-lang-zh="对新进入人工智能领域的团队，提供现场培训与系统化指导，帮助快速掌握模型使用与二次开发能力" 
+               data-lang-en="For teams newly entering the AI field, we provide on-site training and systematic guidance to quickly master model deployment and secondary development.">
+            </p>
+            <div class="service-details">
+              <ul>
+                <li data-lang-zh="AI基础与进阶培训" data-lang-en="AI fundamentals and advanced training">AI基础与进阶培训</li>
+                <li data-lang-zh="模型部署实战指导" data-lang-en="Hands-on model deployment guidance">模型部署实战指导</li>
+                <li data-lang-zh="二次开发能力培养" data-lang-en="Secondary development capability building">二次开发能力培养</li>
+                <li data-lang-zh="持续技术支持服务" data-lang-en="Ongoing technical support services">持续技术支持服务</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 服务过渡部分 -->
+        <div class="service-transition">
+          <div class="transition-icon">🚀</div>
+          <p data-lang-zh="真正实现从'可用算力'到'会用算力'的跃升" 
+             data-lang-en="Achieving a true transition from having computing power to knowing how to use it.">
+          </p>
+        </div>
+        
+        <!-- 联系信息 -->
+
+<style>
+  /* 服务介绍样式 */
+  .services-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  
+  /* 服务网格布局 */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  /* 服务卡片样式 */
+  .service-card {
+    background: linear-gradient(135deg, rgba(10, 132, 255, 0.08), rgba(90, 200, 250, 0.05));
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(10, 132, 255, 0.2);
+    border-color: rgba(90, 200, 250, 0.3);
+  }
+  
+  .service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-align: center;
+  }
+  
+  .service-card h4 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .service-card p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service-details {
+    margin-top: auto;
+  }
+  
+  .service-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-details li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-details li:before {
+    content: "✓";
+    color: var(--accent);
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* 过渡部分样式 */
+  .service-transition {
+    background: rgba(10, 132, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-transition::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(10, 132, 255, 0.1), transparent);
+    z-index: -1;
+  }
+  
+  .transition-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--accent);
+  }
+  
+  .service-transition p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+      padding: 20px;
+    }
+    
+    .service-icon {
+      font-size: 2.5rem;
+    }
+    
+    .service-transition p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
         <div class="service-contact">
           <h4 data-lang-zh="获取更多产品资料、定制方案或报价" data-lang-en="For Product Info, Custom Plans or Quotations">获取更多产品资料、定制方案或报价</h4>
-          <p data-lang-zh="请联系实验室项目合作部门" data-lang-en="Please contact our Project Cooperation Department">请联系实验室项目合作部门</p>
+          <p data-lang-zh="请联系实验室" data-lang-en="Please contact the laboratory">请联系实验室</p>
           
           <div class="contact-details">
             <div class="contact-detail">
@@ -775,7 +1003,7 @@
         <div class="hero-right">
           <div class="card">
             <h4 data-lang-zh="技术亮点" data-lang-en="Technical Highlights">技术亮点</h4>
-            <p data-lang-zh="采用先进液冷技术，PUE值低于2，融合超算与智能算力架构，为大规模AI训练、卫星遥感解译提供稳定高效的计算平台。" data-lang-en="Utilizing advanced liquid cooling technology with PUE as low as 1.15, integrating supercomputing and intelligent computing architectures to provide a stable and efficient computing platform for large-scale AI training and satellite remote sensing interpretation.">采用先进液冷技术，PUE值低于2，融合超算与智能算力架构，为大规模AI训练、卫星遥感解译提供稳定高效的计算平台。</p>
+            <p data-lang-zh="采用先进液冷技术，PUE值低于1.2，融合超算与智能算力架构，为大规模AI训练、卫星遥感解译提供稳定高效的计算平台。" data-lang-en="Utilizing advanced liquid cooling technology with PUE as low as 1.2, integrating supercomputing and intelligent computing architectures to provide a stable and efficient computing platform for large-scale AI training and satellite remote sensing interpretation.">采用先进液冷技术，PUE值低于1.2，融合超算与智能算力架构，为大规模AI训练、卫星遥感解译提供稳定高效的计算平台。</p>
           </div>
         </div>
       </div>
@@ -786,7 +1014,7 @@
       <!-- 项目概述 -->
       <section class="section" id="compute-overview">
         <h3 data-lang-zh="项目概述" data-lang-en="Project Overview">项目概述</h3>
-        <p data-lang-zh="新疆国际融合算力中心位于昌吉信息产业园，是国家'东数西算'工程的重要节点。项目由中国科学院、新疆大学、清华大学、北京大学等单位联合建设，旨在为科研、产业及中亚区域提供'数据 + 算力 + 应用'的综合支撑。" data-lang-en="Located in Changji Information Industry Park, the Xinjiang International Integrated Computing Power Center is a key node in China's 'East–Data–West–Computing' project. Jointly established by the Chinese Academy of Sciences, Xinjiang University, Tsinghua University, Peking University, and other institutions, it aims to provide comprehensive 'Data + Computing Power + Applications' support for research, industry, and the Central Asia region.">新疆国际融合算力中心位于昌吉信息产业园，是国家"东数西算"工程的重要节点。项目由中国科学院、新疆大学、清华大学、北京大学等单位联合建设，旨在为科研、产业及中亚区域提供"数据 + 算力 + 应用"的综合支撑。</p>
+        <p data-lang-zh="新疆国际融合算力中心是国家'东数西算'工程的重要节点。项目由空天地一体化实验室与六位院士联合建设，旨在为科研、产业及中亚区域提供'数据 + 算力 + 应用'的综合支撑。" data-lang-en="The Xinjiang International Integrated Computing Power Center is an important node in the national "Eastern Data, Western Computing" project. The project is jointly constructed by the integrated aerospace and terrestrial laboratory and six academicians, aiming to provide comprehensive support of "data + computing power + applications" for scientific research, industry, and the Central Asian region.">新疆国际融合算力中心是国家'东数西算'工程的重要节点。项目由空天地一体化实验室与六位院士联合建设，旨在为科研、产业及中亚区域提供'数据 + 算力 + 应用'的综合支撑。</p>
       </section>
 
       <!-- 建设规模与技术 -->
@@ -797,10 +1025,10 @@
             <h4 data-lang-zh="一期算力峰值 2000P" data-lang-en="Phase I Peak 2,000P">一期算力峰值 2000P</h4>
           </div>
           <div class="card-mini">
-            <h4 data-lang-zh="二期在建 8000P（规划）" data-lang-en="Phase II Planned 8,000P">二期在建 8000P（规划）</h4>
+            <h4 data-lang-zh="二期在建 8000P" data-lang-en="Phase II 8,000P">二期在建 8000P</h4>
           </div>
           <div class="card-mini">
-            <h4 data-lang-zh="PUE ＜ 2（一期）" data-lang-en="PUE ＜ 2 (Phase I)">PUE ＜ 2（一期）</h4>
+            <h4 data-lang-zh="PUE ＜ 1.2（一期）" data-lang-en="PUE ＜ 1.2 (Phase I)">PUE ＜ 1.2（一期）</h4>
           </div>
         </div>
 
@@ -811,6 +1039,8 @@
       <section class="section" id="compute-applications">
         <h3 data-lang-zh="应用与服务" data-lang-en="Applications & Services">应用与服务</h3>
         <p data-lang-zh="中心以'数据 + 算力 + 应用'为运行模式，支撑卫星遥感数字平台、低空安全预警、精准农业推算模型、工业模拟与公共安全等多类应用。通过与空天地一体化实验室深度协同，推动AI大模型在遥感解译、应急响应与跨境物流等场景的落地。" data-lang-en="Operating on a 'Data + Computing Power + Applications' model, the center supports various applications including satellite remote sensing digital platforms, low-altitude safety warnings, precision agriculture calculation models, industrial simulation, and public safety. Through deep collaboration with the Integrated Laboratory for Space, Air, and Ground Systems, it promotes the implementation of large AI models in scenarios such as remote sensing interpretation, emergency response, and cross-border logistics.">中心以"数据 + 算力 + 应用"为运行模式，支撑卫星遥感数字平台、低空安全预警、精准农业推算模型、工业模拟与公共安全等多类应用。通过与空天地一体化实验室深度协同，推动AI大模型在遥感解译、应急响应与跨境物流等场景的落地。</p>
+        <p data-lang-zh="我们构建了'算力支撑—模型开发—技术培训'一体化服务模式。对于具备项目需求的合作伙伴，可按需提供高性能算力资源；对缺乏算力应用经验的机构，提供定制化大模型开发与算法训练服务；对新进入人工智能领域的团队，我们派出专业技术团队开展现场培训与系统化指导，帮助合作方快速掌握模型使用与二次开发能力，真正实现从'可用算力'到'会用算力'的跃升。" 
+             data-lang-en="We have established an integrated service model of 'Computing Power Support – Model Development – Technical Training.' For partners with specific project requirements, we provide on-demand access to high-performance computing resources. For institutions without experience in computing power utilization, we offer customized AI model development and algorithm training services. For teams newly entering the AI field, our professional technical experts deliver on-site training and systematic guidance, enabling partners to quickly master model deployment and secondary development — achieving a true transition from having computing power to knowing how to use it.">
       </section>
 
       <!-- 规划与目标 -->
